@@ -117,7 +117,7 @@ def main():
         os.environ["LOCALE"] = locale
         ofile = scene + "_" + locale + ".mp4"
         cmd = [
-            "manim",
+            ".venv/bin/manim",
             f"-q{quality}",
             file,
             scene,
