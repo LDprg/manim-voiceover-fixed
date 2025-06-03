@@ -128,7 +128,7 @@ def main():
 
         # Run manim with the command
         try:
-            result = subprocess.run(cmd, env={"LOCALE": locale, "DOMAIN": domain}).returncode
+            result = subprocess.run(cmd, env={"LOCALE": locale, "DOMAIN": domain, "PATH": os.environ["PATH"]}).returncode
         except KeyboardInterrupt:
             print("KeyboardInterrupt")
             sys.exit(0)
