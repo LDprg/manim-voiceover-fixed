@@ -60,6 +60,7 @@ openai-whisper = { version = "^20230314", optional = true }
 stable-ts = { version ="^2.6.2", optional = true }
 python-slugify = "^8.0.1"
 elevenlabs = "^2.1.0"
+numpy="^2"
 
 [tool.poetry.extras]
 azure = ["azure-cognitiveservices-speech"]
